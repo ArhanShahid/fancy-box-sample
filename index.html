@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>FancyBox</title>
+    <link href="fancybox/jquery.fancybox.css" rel="stylesheet">
+    <script src="js/jQuery1.9.1.min.js"></script>
+    <!--<script src="fancybox/jquery.fancybox.js"></script>-->
+    <script src="fancybox/jquery.fancybox.pack.js"></script>
+    <script>
+        $(function(){
+            $(".Gallery a").fancybox({
+                overlayColor: '#060',
+                overlayOpacity: .3,
+                transitionIn: 'elastic',
+                transitionOut: 'elastic',
+                easingIn: 'easeInSine',
+                easingOut: 'easeOutSine',
+                titlePosition: 'outside' ,
+                cyclic: true
+            });
+
+        })
+    </script>
+</head>
+<body>
+<div class="Gallery">
+    <a href="img/img1_L.jpg" class="fancybox" rel="Gallery">
+        <img src="img/img1_L.jpg" width="70" height="70" alt="golf balls"></a>
+    <a href="img/img2_L.jpg" class="fancybox" rel="Gallery">
+        <img src="img/img2_L.jpg" width="70" height="70" alt="golf balls"></a>
+    <a href="img/img3_L.jpg" class="fancybox" rel="Gallery">
+        <img src="img/img3_L.jpg" width="70" height="70" alt="golf balls"></a>
+</div>
+</body>
+</html>
